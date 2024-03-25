@@ -27,10 +27,10 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+    <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
       <div class="container-fluid">
         <!--navbar logo-->
-        <a class="navbar-brand mx-3 mt-2" href="#">
+        <a class="navbar-brand mx-3 mt-2" href="/">
           <img
             class="img-fluid"
             src="{{ url_for('static', filename='assets/nexgen_colored.png') }}"
@@ -68,16 +68,30 @@
               </a>
               <!--drop down services links-->
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Web Design</a></li>
-                <li><a class="dropdown-item" href="#">Branding</a></li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="{{ url_for('services') }}#web-design"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{{ url_for('services') }}#branding"
+                    >Branding</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{{ url_for('services') }}#Digital-Marketing-Services"
                     >Digital Marketing Services</a
                   >
                 </li>
               </ul>
             </li>
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
           </div>
         </div>
         <a
@@ -90,9 +104,7 @@
     </nav>
     <!--main body-->
 
-    <body>
-      {% block content %} {% endblock %}
-    </body>
+    {% block content %} {% endblock %}
 
     <!--footer-->
     <footer class="footer mt-auto pt-1 bg-light border-top">

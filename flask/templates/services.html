@@ -1,0 +1,103 @@
+{% extends "base.html" %} {% block content %}
+
+<!--web design and development-->
+<div
+  class="card border-0 bg-light px-5 py-5"
+  style="height: 100vh; max-width: 100%"
+  id="web-design"
+>
+  <div class="row g-0 flex-row-reverse" style="height: 100vh; max-width: 100%">
+    <div class="col-md-4 py-5">
+      <img
+        src="{{url_for('static', filename='assets/web_design_png.webp')}}"
+        class="img-fluid object-fit-section py-5"
+        alt="web design photo"
+      />
+    </div>
+    <div class="col-1"></div>
+    <div class="col-md-7 bg-light">
+      <div class="card-body">
+        <h1 class="card-title display-1 mb-4 pt-5">Web Design & Development</h1>
+        <div>
+          <p class="card-text fs-3 py-5">
+            We design and develop websites that are visually appealing and
+            user-friendly. Our websites are designed to be responsive and
+            optimized for search engines. We use the latest technologies to
+            create websites that are fast, secure, and easy to maintain.
+          </p>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg fw-bold my-3"
+          >Start Your Project Today</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Branding -->
+<div class="card mb-3 border-0 px-5" id="branding">
+  <div class="row g-0 flex-row-reverse" style="height: 100vh; max-width: 100%">
+    <div class="col-md-4 pt-5">
+      <img
+        src="{{ url_for('static', filename='assets/branding.png') }}"
+        class="img-fluid flex-row-reverse mb-4 object-fit-section pt-5"
+        alt="branding photo"
+      />
+    </div>
+    <div class="col-1"></div>
+
+    <div class="col-md-7">
+      <div class="card-body">
+        <h1 class="card-title display-1 mb-4 pt-5">Branding</h1>
+        <div class="col-10">
+          <p class="card-text fs-3 ps-3 py-3">
+            We help businesses develop strong brand identities that set them
+            apart from the competition. Our branding services include logo
+            design, brand strategy, and brand guidelines. We work closely with
+            our clients to create brands that resonate with their target
+            audience and drive results.
+          </p>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg mx-3 my-3 fw-bold"
+          >Get a Free Consultation</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Digital Marketing Services  -->
+<div class="card mb-3 border-0 px-5 bg-light" id="Digital-Marketing-Services">
+  <div class="row g-0 flex-row-reverse" style="height: 100vh; max-width: 100%">
+    <div class="col-md-4 pt-5">
+      <img
+        src="{{ url_for('static', filename='assets/Digtal-marketing.png') }}"
+        class="img-fluid flex-row-reverse mb-4 object-fit-section pt-5"
+        alt="Digital-Marketing-Services photo"
+      />
+    </div>
+    <div class="col-1"></div>
+
+    <div class="col-md-7">
+      <div class="card-body">
+        <h1 class="card-title display-1 mb-4 pt-5">
+          Digital Marketing Services
+        </h1>
+        <div class="col-10">
+          <p class="card-text fs-3 ps-3 py-3">
+            We offer a full range of digital marketing services to help
+            businesses grow online. Our services include search engine
+            optimization (SEO), pay-per-click advertising (PPC), social media
+            marketing, and email marketing. We work with our clients to create
+            custom digital marketing strategies that drive results.
+          </p>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg mx-3 my-3 fw-bold"
+          >Get Started with Our Services</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

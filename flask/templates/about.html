@@ -1,77 +1,79 @@
 {% extends 'base.html' %} {% block content %}
 
 <!--main body-->
-<body>
-  <!--about us -->
-  <div class="card mb-3 border-0 bg-light" style="max-width: 100%">
-    <div class="row g-0 flex-row-reverse">
-      <div class="col-md-4">
-        <img
-          src="{{ url_for('static', filename='assets/connect_people.jpg') }}"
-          class="img-fluid flex-row-reverse"
-          alt="..."
-          style="height: 100%; width: 100%"
-        />
-      </div>
-      <div class="col-md-8 bg-light">
-        <div class="card-body">
-          <h1 class="card-title display-1 mb-4 pt-5">
-            We craft brands that connect.
-          </h1>
-          <div class="col-10">
-            <p class="card-text fs-3 ps-3 pt-3">
-              In today's digital world, a strong brand is essential for building
-              lasting relationships with your audience. We go beyond just
-              creating beautiful designs - we develop
-              <em class="fw-bold">cohesive brand identities</em>
-              that resonate deeply and connect with your target market on a
-              meaningful level.
-            </p>
-          </div>
+
+<!--about us -->
+<div class="card mb-3 border-0 bg-light" style="height: 100vh; max-width: 100%">
+  <div class="row g-0 flex-row-reverse">
+    <div class="col-md-4">
+      <img
+        src="{{ url_for('static', filename='assets/connect_people.jpg') }}"
+        class="img-fluid flex-row-reverse"
+        alt="..."
+        style="height: 100%; width: 100%"
+      />
+    </div>
+    <div class="col-md-8 bg-light">
+      <div class="card-body">
+        <h1 class="card-title display-1 mb-4 pt-5">
+          We craft brands that connect.
+        </h1>
+        <div class="col-10">
+          <p class="card-text fs-3 ps-3 pt-3">
+            In today's digital world, a strong brand is essential for building
+            lasting relationships with your audience. We go beyond just creating
+            beautiful designs - we develop
+            <em class="fw-bold">cohesive brand identities</em>
+            that resonate deeply and connect with your target market on a
+            meaningful level.
+          </p>
         </div>
       </div>
     </div>
   </div>
-</body>
+</div>
 
 <!--our story-->
-
 <!--make our story in the center with h1 and display-1 -->
-<div class="text-center">
-  <h1 class="display-1 my-5">Our Story</h1>
-</div>
-<div class="text-center col-md-9 fs-3 mx-auto mb-5">
-  NexGen was born from a shared passion for helping businesses thrive in the
-  digital age. We saw a gap between simply creating visuals and crafting brands
-  that truly connect with their audience. We believe in the power of strategic
-  branding, user-centric web development, and data-driven marketing to build
-  meaningful relationships with customers and drive results.
-</div>
-<div class="text-center">
-  <img
-    src="{{ url_for('static', filename='assets/jumping_people.webp') }}"
-    alt="jumping people"
-  />
-</div>
-
-<!--Why Choose Us?-->
-<div class="bg-light">
-  <div class="text-center bg-light">
-    <h1 class="display-1 my-5">Why Choose Us?</h1>
+<div style="height: 100vh; max-width: 100%">
+  <div class="text-center">
+    <h1 class="display-1 my-5">Our Story</h1>
   </div>
-  <div class="text-center col-md-9 fs-3 mx-auto mb-5 bg-light">
-    <p>
-      At NexGen, we believe in the power of strategic branding, user-centric web
-      development, and data-driven marketing to build meaningful relationships
-      with customers and drive results. We are passionate about helping
-      businesses thrive in the digital age and are committed to providing
-      exceptional service and results for our clients.
-    </p>
-    <!--ready to connect button-->
-    <div class="text-center">
-      <a class="btn btn-primary btn-lg my-5" href="#" role="button"
-        >Ready to work together?</a
-      >
+  <div class="text-center col-md-9 fs-3 mx-auto mb-5">
+    NexGen was born from a shared passion for helping businesses thrive in the
+    digital age. We saw a gap between simply creating visuals and crafting
+    brands that truly connect with their audience. We believe in the power of
+    strategic branding, user-centric web development, and data-driven marketing
+    to build meaningful relationships with customers and drive results.
+  </div>
+  <div class="text-center">
+    <img
+      src="{{ url_for('static', filename='assets/jumping_people.webp') }}"
+      alt="jumping people"
+    />
+  </div>
+</div>
+<div class="container pt-5 bg-light" style="height: 100vh; max-width: 100%">
+  <!--Why Choose Us?-->
+  <div class="bg-light">
+    <div class="text-center bg-light">
+      <h1 class="display-1 my-5">Why Choose Us?</h1>
+    </div>
+
+    <div class="text-center col-md-9 fs-3 mx-auto mb-5 bg-light">
+      <p>
+        At NexGen, we believe in the power of strategic branding, user-centric
+        web development, and data-driven marketing to build meaningful
+        relationships with customers and drive results. We are passionate about
+        helping businesses thrive in the digital age and are committed to
+        providing exceptional service and results for our clients.
+      </p>
+      <!--ready to connect button-->
+      <div class="text-center">
+        <a class="btn btn-primary btn-lg my-5" href="#" role="button"
+          >Ready to work together?</a
+        >
+      </div>
     </div>
   </div>
 </div>
