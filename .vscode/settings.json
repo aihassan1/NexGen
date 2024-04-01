@@ -1,3 +1,19 @@
 {
-  "cSpell.words": ["navbarmenu"]
+  "cSpell.words": ["navbarmenu"],
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "18.210.14.47",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "NexGen",
+      "database": "NexGen_contact_form",
+      "username": "NexGen_Admin",
+      "password": "admin"
+    }
+  ]
 }

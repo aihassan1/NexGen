@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/flask/static/assets/N_icon.png" type="image/png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen</title>
+    <link rel="stylesheet" href="/flask/static/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom fixed-top">
+      <div class="container-fluid">
+        <!--navbar logo-->
+        <a class="navbar-brand mx-3 mt-2" href="#">
+          <img
+            class="img-fluid"
+            src="/flask/static/assets/nexgen_colored.png"
+            alt="NexGen Marketing & Design Co."
+            style="max-width: 200px; max-height: 50px"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarmenu"
+          aria-controls="navbarmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--navbar menu-->
+        <div
+          class="collapse navbar-collapse fs-5 fw-semibold ms-1"
+          id="navbarmenu"
+        >
+          <div class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <!--drop down services links-->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                <li><a class="dropdown-item" href="#branding">Branding</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Digital Marketing Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <a class="nav-link" href="#">About Us</a>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <!--main body-->
+
+    <!--web design and development-->
+    <div
+      class="card border-0 bg-light px-5 py-5"
+      style="height: 100vh; max-width: 100%"
+      id="web-design"
+    >
+      <div
+        class="row g-0 flex-row-reverse"
+        style="height: 100vh; max-width: 100%"
+      >
+        <div class="col-md-4 py-5">
+          <img
+            src="/flask/static/assets/web_design_png.webp"
+            class="img-fluid object-fit-section py-5"
+            alt="web design photo"
+          />
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-7 bg-light">
+          <div class="card-body">
+            <h1 class="card-title display-1 mb-4 pt-5">
+              Web Design & Development
+            </h1>
+            <div>
+              <p class="card-text fs-3 py-5">
+                We design and develop websites that are visually appealing and
+                user-friendly. Our websites are designed to be responsive and
+                optimized for search engines. We use the latest technologies to
+                create websites that are fast, secure, and easy to maintain.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary btn-lg fw-bold my-3"
+              >Start Your Project Today</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding -->
+    <div class="card mb-3 border-0 px-5" id="branding">
+      <div
+        class="row g-0 flex-row-reverse"
+        style="height: 100vh; max-width: 100%"
+      >
+        <div class="col-md-4 pt-5">
+          <img
+            src="/flask/static/assets/branding.png"
+            class="img-fluid flex-row-reverse mb-4 object-fit-section pt-5"
+            alt="branding photo"
+          />
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-md-7">
+          <div class="card-body">
+            <h1 class="card-title display-1 mb-4 pt-5">Branding</h1>
+            <div class="col-10">
+              <p class="card-text fs-3 ps-3 py-3">
+                We help businesses develop strong brand identities that set them
+                apart from the competition. Our branding services include logo
+                design, brand strategy, and brand guidelines. We work closely
+                with our clients to create brands that resonate with their
+                target audience and drive results.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary btn-lg mx-3 my-3 fw-bold"
+              >Get a Free Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Marketing Services  -->
+    <div
+      class="card mb-3 border-0 px-5 bg-light"
+      id="Digital-Marketing-Services"
+    >
+      <div
+        class="row g-0 flex-row-reverse"
+        style="height: 100vh; max-width: 100%"
+      >
+        <div class="col-md-4 pt-5">
+          <img
+            src="/flask/static/assets/Digtal-marketing.png"
+            class="img-fluid flex-row-reverse mb-4 object-fit-section pt-5"
+            alt="Digital-Marketing-Services photo"
+          />
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-md-7">
+          <div class="card-body">
+            <h1 class="card-title display-1 mb-4 pt-5">
+              Digital Marketing Services
+            </h1>
+            <div class="col-10">
+              <p class="card-text fs-3 ps-3 py-3">
+                We offer a full range of digital marketing services to help
+                businesses grow online. Our services include search engine
+                optimization (SEO), pay-per-click advertising (PPC), social
+                media marketing, and email marketing. We work with our clients
+                to create custom digital marketing strategies that drive
+                results.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary btn-lg mx-3 my-3 fw-bold"
+              >Get Started with Our Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer mt-auto pt-1 bg-light border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 d-flex align-items-end">
+            <p class="text-muted">&copy; 2022 NexGen Marketing & Design Co.</p>
+          </div>
+
+          <!--social media icons-->
+          <div class="col-4 d-flex justify-content-center">
+            <a href="#" class="me-4">
+              <i class="bi bi-facebook fs-3"></i>
+            </a>
+            <a href="#" class="me-4">
+              <i class="bi bi-twitter fs-3"></i>
+            </a>
+            <a href="#" class="me-4">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-envelope fs-3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

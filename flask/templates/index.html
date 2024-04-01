@@ -1,32 +1,44 @@
 {% extends 'base.html' %} {% block content %}
 <!--main body-->
-<div class="justify-content-center align-items-center">
-  <!--empty block for margin-->
-  <div class="container margin-block d-none d-md-block"></div>
+<div style="background: linear-gradient(to right, #5059a4, #36a9e1)">
+  <div class="justify-content-center align-items-center">
+    <!--empty block for margin-->
+    <div class="container margin-block d-none d-md-block"></div>
 
-  <div class="card text-center border-0">
-    <div class="contair mt-4">
-      <div class="card-body">
-        <h5 class="card-subtitle my-2 fs-3">
-          We transform visions into reality
-        </h5>
+    <div
+      class="card text-center border-0"
+      style="background: linear-gradient(to right, #5059a4, #36a9e1)"
+    >
+      <div class="contair mt-4">
+        <div class="card-body">
+          <h5 class="card-subtitle my-2 fs-3 bg-ligth text-white">
+            We transform visions into reality
+          </h5>
 
-        <div class="col-9 mx-auto">
-          <p class="card-title display-5">
-            NexGen creates brands and websites that connect, inspire, and stand
-            out.
-          </p>
+          <div class="col-9 mx-auto text-white">
+            <p class="card-title display-5">
+              NexGen creates brands and websites that connect, inspire, and
+              stand out.
+            </p>
+          </div>
+          <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg mt-3"
+            >Learn more</a
+          >
         </div>
-        <a href="#" class="btn btn-primary btn-lg mt-3">Learn more</a>
       </div>
     </div>
   </div>
-</div>
-<!--empty block for margin-->
-<div class="container footer-margin-block d-none d-md-block"></div>
-<div class="d-flex flex-row-reverse mx-5">
-  <button type="button" class="btn btn-outline-primary btn-lg mb-4">
-    New Project?
-  </button>
+  <!--empty block for margin-->
+  <div class="container footer-margin-block d-none d-md-block"></div>
+  <div class="d-flex flex-row-reverse mx-5">
+    <button
+      type="button"
+      class="btn btn-outline-light btn-lg mb-5"
+      data-bs-toggle="modal"
+      data-bs-target="#contactModal"
+    >
+      New Project?
+    </button>
+  </div>
 </div>
 {% endblock content %}
