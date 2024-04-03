@@ -74,7 +74,10 @@ def submit_contact():
     db.session.commit()
 
     first_name = name.split(" ")[0]
-    if first_name.lower() == "mariam":
+    if (
+        first_name.lower() == "mariam"
+        and email.lower() == "mariamhussein192003@gmail.com"
+    ):
         return render_template("thank_you.html")
     else:
         return f"Thank you {first_name} , Form submitted successfully! "
