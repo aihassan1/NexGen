@@ -59,7 +59,6 @@ location /static {
 }
 
 }
-
 EOF
 
 # Enable the Nginx Configuration
