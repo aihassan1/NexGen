@@ -73,7 +73,11 @@ def submit_contact():
     db.session.add(new_contact)
     db.session.commit()
 
-    return "Form submitted successfully! "
+    first_name = name.split(" ")[0]
+    if first_name.lower() == "mariam":
+        return render_template("thank_you.html")
+    else:
+        return f"Thank you {first_name} , Form submitted successfully! "
 
 
 if __name__ == "__main__":
