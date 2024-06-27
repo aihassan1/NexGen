@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "bootstrap-icons": "^1.11.3"
-  }
+  },
+  "name": "nexgen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aihassan1/NexGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aihassan1/NexGen/issues"
+  },
+  "homepage": "https://github.com/aihassan1/NexGen#readme",
+  "description": ""
 }
