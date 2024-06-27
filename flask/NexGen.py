@@ -2,9 +2,12 @@ from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "mysql://NexGen_Admin:admin@18.210.14.47/NexGen_contact_form"
-)
+# app.config["SQLALCHEMY_DATABASE_URI"] = (
+#     "mysql://NexGen_Admin:admin@18.210.14.47/NexGen_contact_form"
+# )
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://admin:admin@localhost/nexgen"
+
 db = SQLAlchemy(app)
 
 
@@ -84,4 +87,4 @@ def submit_contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
