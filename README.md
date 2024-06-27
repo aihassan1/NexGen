@@ -50,8 +50,6 @@ However, NexGen is not intended for large-scale marketing campaigns or enterpris
 
 ## Mockups
 
-# (Include screenshots or links to your mockups.)
-
 ## User Stories
 
 1. As a user, I want to easily navigate the website and find information about NexGen's services, team members, and contact details so that I can learn more about the company.
